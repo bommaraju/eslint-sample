@@ -1,0 +1,33 @@
+{
+  "extends" : "airbnb",
+  "plugins" : [
+    "react"
+  ],
+  "env"     : {
+    "browser": true,
+    "node"   : true,
+    "es6"    : true
+  },
+  "rules"   : {
+    "max-len"             : [
+      2,
+      100
+    ],
+    "key-spacing"         : [
+      1,
+      {
+        "align": "colon"
+      }
+    ],
+    "no-unused-vars"      : 0,
+    "import/no-unresolved": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack"
+      }
+    },
+    "import/parser"  : "babel-eslint"
+  }
+}
